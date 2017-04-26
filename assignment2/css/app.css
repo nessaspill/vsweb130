@@ -1,0 +1,97 @@
+.row:before, .row:after {
+  content: '';
+  display: table; }
+.row:after {
+  clear: both; }
+
+/* Talk about this "magic" in Wednesday's lecture. */
+@media all and (max-width: 40em) {
+  .small-1 {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 23%;
+    margin: 1%; }
+
+  .small-2 {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 46%;
+    margin: 2%; }
+
+  .small-3 {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 69%;
+    margin: 3%; }
+
+  .small-4, .item {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 92%;
+    margin: 4%; } }
+@media all and (min-width: 40.01em) and (max-width: 64em) {
+  .medium-1 {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 23%;
+    margin: 1%; }
+
+  .medium-2, .item {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 46%;
+    margin: 2%; }
+
+  .medium-3 {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 69%;
+    margin: 3%; }
+
+  .medium-4 {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 92%;
+    margin: 4%; } }
+@media all and (min-width: 64.01em) {
+  .large-1, .item {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 23%;
+    margin: 1%; }
+
+  .large-2 {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 46%;
+    margin: 2%; }
+
+  .large-3 {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 69%;
+    margin: 3%; }
+
+  .large-4 {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 92%;
+    margin: 4%; } }
+.item {
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #DDD; }
+
+/*# sourceMappingURL=app.css.map */

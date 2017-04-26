@@ -1,0 +1,55 @@
+$smallMax: 40.0em;
+$mediumMin: 40.01em;
+$mediumMax: 64.0em;
+$largeMin: 64.01em;
+
+// Hack to force browser to render content *after* a floated element.
+// Called a "clearfix" hack.
+.row {
+    &:before,
+    &:after {
+        content: '';
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin columnQuery($size) {
+    @if $size == large {
+        @media all and (min-width: $largeMin) {
+            @content;
+        }
+    }
+    @else if $size == medium {
+        @media all and (min-width: $mediumMin) and (max-width: $mediumMax) {
+            @content;
+        }
+    }
+    @else if $size == small {
+        @media all and (max-width: $smallMax) {
+            @content;
+        }
+    }
+}
+
+$sizes: small, medium, large;
+
+/* Talk about this "magic" in Wednesday's lecture. */
+@each $size in $sizes {
+    @include columnQuery($size) {
+        @for $col from 1 through 4 {
+            .#{$size}-#{$col} {  // .samll-1 { | .medium-1  { | .large-1 {
+                float: left;
+                padding: 10px;
+                box-sizing: border-box;
+                width: ($col * 23%); // 1 * 25% | 1* 25% | 1 * 25%
+                margin: ($col * 1%);
+            }
+        }
+    }
+}
+
+
+

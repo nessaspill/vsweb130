@@ -1,0 +1,9 @@
+@import 'bourbon/bourbon';
+@import 'media';
+
+.item {
+    @extend .large-1, .medium-2, .small-4;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #DDD;
+}
