@@ -3,6 +3,7 @@ $mediumMin: 40.01em;
 $mediumMax: 64.0em;
 $largeMin: 64.01em;
 
+/*
 // Hack to force browser to render content *after* a floated element.
 // Called a "clearfix" hack.
 .row {
@@ -15,7 +16,7 @@ $largeMin: 64.01em;
         clear: both;
     }
 }
-
+*/
 @mixin columnQuery($size) {
     @if $size == large {
         @media all and (min-width: $largeMin) {
@@ -34,9 +35,10 @@ $largeMin: 64.01em;
     }
 }
 
+
 $sizes: small, medium, large;
 
-/* Talk about this "magic" in Wednesday's lecture. */
+/* Talk about this "magic" in Wednesday's lecture.
 @each $size in $sizes {
     @include columnQuery($size) {
         @for $col from 1 through 4 {
@@ -51,5 +53,4 @@ $sizes: small, medium, large;
     }
 }
 
-
-
+*/

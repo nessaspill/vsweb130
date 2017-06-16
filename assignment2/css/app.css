@@ -92,6 +92,7 @@
 .item {
   padding: 10px;
   box-sizing: border-box;
-  border: 1px solid #DDD; }
+  border: 1px solid #DDD;
+  height: 150px; }
 
 /*# sourceMappingURL=app.css.map */
