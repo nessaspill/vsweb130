@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Responsive Nav-Bar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/app.css">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+        
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
+    
+        <script src="js/toggle.js"></script>
+    </head>
+    <body>
+        <main>
+            <div class="menu-wrap">
+            <nav>
+                <div class="phone">
+                    <a class="title ui-state-default ui-corner-all" href="#" id="button">
+                        MENU
+                    </a>
+                </div>
+                <ul class="desktop toggler" id="effect">
+                    <li class="desktopLi"><a href="#">Home</a></li>
+                    <li class="desktopLi"><a href="#" id="products">Products</a>
+                        <ul class="internNav">
+                            <li class="internLi"><a href="#">Hats</a></li>
+                            <li class="internLi"><a href="#">Gloves</a></li>
+                            <li class="internLi"><a href="#">Shoes</a></li>
+                            <li class="internLi"><a href="#">Pumpkins</a></li>
+                        </ul>
+                    </li>
+                    <li class="desktopLi"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            </div>
+        </main>
+    </body>
+</html>

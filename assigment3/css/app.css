@@ -1,0 +1,184 @@
+.row:before, .row:after {
+  content: '';
+  display: table; }
+.row:after {
+  clear: both; }
+
+/* Talk about this "magic" in Wednesday's lecture. */
+@media all and (max-width: 40em) {
+  .small-1 {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 31%;
+    margin: 1%; }
+
+  .small-2 {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 62%;
+    margin: 2%; }
+
+  .small-3 {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 93%;
+    margin: 3%; } }
+@media all and (min-width: 40.01em) and (max-width: 64em) {
+  .medium-1 {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 31%;
+    margin: 1%; }
+
+  .medium-2 {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 62%;
+    margin: 2%; }
+
+  .medium-3 {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 93%;
+    margin: 3%; } }
+@media all and (min-width: 64.01em) {
+  .large-1 {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 31%;
+    margin: 1%; }
+
+  .large-2 {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 62%;
+    margin: 2%; }
+
+  .large-3 {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 93%;
+    margin: 3%; } }
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'Inconsolata', monospace; }
+
+.menu-wrap {
+  background-color: #2DA9FF; }
+
+nav ul {
+  background-color: #2DA9FF;
+  list-style: none;
+  text-align: center; }
+  @media all and (min-width: 64.01em) {
+    nav ul {
+      text-align: inherit; } }
+  nav ul li {
+    margin-left: -8px; }
+    @media all and (min-width: 64.01em) {
+      nav ul li {
+        position: relative;
+        display: inline-block; } }
+    @media all and (min-width: 40.01em) and (max-width: 64em) {
+      nav ul li {
+        display: inline-block;
+        border-right: 1px solid #ffffff;
+        width: 33.33%; } }
+    nav ul li:last-child {
+      border-right: 1px none; }
+      nav ul li:last-child a {
+        border-right: 1px none; }
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 0px;
+      display: inline-block;
+      height: 20px; }
+      @media all and (min-width: 64.01em) {
+        nav ul li a {
+          border-right: 1px solid #ffffff;
+          padding: 10px 15px; } }
+      @media all and (max-width: 40em) {
+        nav ul li a {
+          display: block;
+          border-top: 1px solid #ffffff; } }
+    nav ul li:hover {
+      background-color: #0A75BE; }
+      nav ul li:hover .internNav {
+        display: block; }
+        @media all and (max-width: 40em) {
+          nav ul li:hover .internNav {
+            display: inherit; } }
+
+@media all and (max-width: 40em) {
+  #products {
+    border-bottom: 1px solid #ffffff; } }
+
+@media all and (max-width: 40em) {
+  #effect {
+    position: relative; }
+
+  #open {
+    display: inline; } }
+@media all and (max-width: 40em) {
+  nav .desktop {
+    display: none; } }
+nav .title {
+  display: none; }
+  @media all and (max-width: 40em) {
+    nav .title {
+      display: block;
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      padding: 10px 0px;
+      height: 20px; }
+      nav .title:hover {
+        background-color: #0A75BE; }
+        nav .title:hover .desktop li {
+          display: block;
+          position: absolute; } }
+
+.internNav {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0px; }
+  @media all and (max-width: 40em) {
+    .internNav {
+      display: block;
+      position: inherit; } }
+  @media all and (min-width: 40.01em) and (max-width: 64em) {
+    .internNav {
+      width: 100%;
+      border-top: 1px solid #ffffff; } }
+  @media all and (min-width: 64.01em) {
+    .internNav li {
+      margin: 0px;
+      width: 100%; } }
+  @media all and (min-width: 40.01em) and (max-width: 64em) {
+    .internNav li {
+      margin-left: -8px;
+      border: 1px none;
+      width: 25%; } }
+  @media all and (max-width: 40em) {
+    .internNav li {
+      margin: 0;
+      width: 100%; } }
+  .internNav li a {
+    border: 0;
+    width: 100%; }
+
+/*# sourceMappingURL=app.css.map */
