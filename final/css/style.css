@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+main {
+  width: 95%;
+  margin-bottom: 2.5%; }
+
+.logo h1 {
+  font-family: 'UnifrakturMaguntia', cursive;
+  font-size: 4.5em;
+  text-align: center;
+  font-weight: normal;
+  padding: 20px 0px;
+  color: coral;
+  text-shadow: 2px 2px #ccc; }
+
+.apps {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 1%; }
+
+h2 {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  color: coral; }
+
+h3 {
+  font-family: 'Merriweather', serif;
+  font-weight: normal;
+  color: coral; }
+
+.news article p {
+  text-align: justify; }
+
+.detail {
+  margin-left: 15%;
+  margin-right: 15%; }
+  .detail article p {
+    text-align: justify; }
+
+.form {
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  padding: 5% 10%;
+  margin-left: 25%;
+  margin-right: 25%; }
+
+.formEdit {
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  padding: 5%;
+  margin-left: 15%;
+  margin-right: 15%; }
+
+.backButton {
+  float: right;
+  margin-right: 15%; }
+
+/*# sourceMappingURL=style.css.map */
